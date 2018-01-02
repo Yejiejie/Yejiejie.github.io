@@ -39,9 +39,9 @@
 							<li>
 								<a href="">信息可视化</a>
 								<ul>
-									<li {% if current[1] == 'left-sidebar.html' %}class="current"{% endif %}><a href="{{ site.baseurl }}/left-sidebar.html">信息可视化笔记</a></li>
+									<li {% if current[1] == 'infovis' %}class="current"{% endif %}><a href="{{ site.baseurl }}/left-sidebar.html">信息可视化笔记</a></li>
 									<li>
-										<a href="">作品集</a>
+										<a href="{{ site.baseurl }}/infovis">作品集</a>
 										<ul>
 											<li><a href="/ye/index.html">期中专题</a></li>
 											<li><a href="#">期末专题</a></li>
@@ -51,9 +51,10 @@
 
 								</ul>
 							</li>
-							<li {% if current[1] == 'blog' %}class="current"{% endif %}><a href="{{ site.baseurl }}/blog">我的文章</a>
+							<li {% if current[1] == 'posts' %}class="current"{% endif %}><a href="{{ site.baseurl }}/posts">我的文章</a>
 								<ul>
-									<li><a href="/posts/rwd">rwd</a></li>
+									<li><a href="/posts">网页设计笔记</a></li>
+									<li><a href="/posts/rwd">Web 分类(categories)</a></li>
 								</ul>
 							</li>
 							
