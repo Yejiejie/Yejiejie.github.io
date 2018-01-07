@@ -13,9 +13,9 @@ layout: default
 						<!-- Blog -->
 							<section>
 								<header class="major">
-									<h2>Web 分类</h2>
+									<h2>可视化笔记集</h2>
 								</header>
-								<h3>可视化笔记集</h3>
+								
 								{% for post in site.categories.visualization offset: 0 limit: 4 %}
 									<div class="row">
 										<section class="12u">
@@ -28,12 +28,14 @@ layout: default
 													</footer>
 												</div>
 											</div>
+										<div class ="excerpt">
 										{{post.excerpt}}
+										</div>
 										</section>
 									</div>
 								{% endfor %}
 							</section>
-						<h3><a href="{{ site.baseurl }}/infovis">可视化作品集</a></h3>
+						
 					</div>
 				</div>
 		</div>

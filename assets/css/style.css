@@ -845,12 +845,12 @@
 }
 
 @media print {
-    #masthead, header, nav, copyright, welcome, html [type=button], .menu-screen {
+    #masthead, header, nav, welcome, html [type=button], .menu-screen, .icons {
         display: none;
     }
 
 	.image.featured {
-	width: 90%;
+	width: 70%;
 	}
 
 	.box.post {
@@ -866,7 +866,17 @@
 	.button {
 		display: none;
 	}
-		
+	.image.picture {
+		width:30%;
+		float:left;
+	}
+	.excerpt {
+		width:50%;
+		height:50%;
+		position: relative;
+		margin: -160px 0 0 325px;
+	}
+
     p {
 	    font-size: 1rem !important;		
 	}
