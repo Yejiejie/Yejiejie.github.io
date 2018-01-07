@@ -244,9 +244,9 @@
 		.image.left {
 			display: block;
 			float: left;
-			margin: 0 2em 2em 0;
+			margin: 0 0 0 0;
 			position: relative;
-			top: 0.25em;
+			top: 0em;
 		}
 
 			.image.left img {
@@ -553,7 +553,7 @@
 			}
 
 		.box.post .image {
-			width: 30%;
+			width: 50%;
 			margin: 0;
 		}
 
@@ -839,3 +839,37 @@
 			text-align: center;
 			font-size: 0.9em;
 		}
+@page {
+  size: A4;
+  margin: 10;
+}
+
+@media print {
+    #masthead, header, nav, copyright, welcome, html [type=button], .menu-screen {
+        display: none;
+    }
+
+	.image.featured {
+	width: 90%;
+	}
+
+	.box.post {
+	width: 50%;
+	text-align:center;
+	}
+	.button {
+		display: none;
+	}
+		
+    p {
+	    font-size: 1rem !important;		
+	}
+	
+	h1 {
+	    font-size: 3rem !important;		
+	}
+	
+	h2, h3, h4, h5, h6 {
+	    font-size: 1.5rem !important;		
+	}
+}

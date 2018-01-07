@@ -792,3 +792,19 @@
 			font-size: 0.9em;
 		}
 	}
+		
+ @media print {
+  selector{
+  ...
+  }
+}
+@import url(print-style.css) print;
+@page :pseudo-class {
+  size: A4 landscape;
+  margin:2cm;
+}
+@media print {
+  section {page-break-before: always;}
+  h1 {page-break-after: always;}
+  p {page-break-inside: avoid;}
+}
