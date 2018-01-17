@@ -15,7 +15,7 @@ layout: default
 								<header class="major">
 									<h2>我的笔记</h2>
 								</header>
-								{% for post in site.posts offset: 0 limit: 10 %}
+								{% for post in site.categories.web offset: 0 limit: 8 %}
 									<div class="row">
 										<section class="12u">
 											<div class="box post">
@@ -26,6 +26,9 @@ layout: default
 													<footer>
 														<a href="{{ site.baseurl }}{{ post.url }}" class="button">Continue Reading</a>
 													</footer>
+												</div>
+												<div class ="excerpt">
+												{{post.excerpt}}
 												</div>
 											</div>
 
